@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: url(../images/banner.jpg);
+    /* background-repeat: no-repeat, repeat; */
+    background-color: #34ebc3;
+    background-size: cover;
+}
+
+.btn {
+    padding: 8px 20px;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #f7920d !important;
+    border: 1px solid #f7920d !important;
+    color: #fff !important;
+    -webkit-box-shadow: 0 3px 5px 0 rgb(47 85 212 / 30%);
+    box-shadow: 0 3px 5px 0 rgb(47 85 212 / 30%);
+}
+
+.btn-primary:hover {
+    background-color: #2443ac !important;
+    border-color: #2443ac !important;
+    color: #fff !important;
+}
+
+.form-head{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+}
