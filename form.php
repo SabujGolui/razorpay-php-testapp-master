@@ -17,7 +17,7 @@
   <!-- =========================navbar================ -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.php">
+      <a class="navbar-brand" href="/index.html">
         <img src="/images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
         Game Zone
       </a>
@@ -54,16 +54,17 @@
             <div class="left">
               <h3>
                 <span class="text-white mb-2 "">Select Recharge</span>
-                        </h3>
-                        <h5>
-                            <ul class=" list-group">
-                  <li class="list-group-item">200 coins / Rs. 100</li>
-                  <li class="list-group-item">500 coins / Rs. 200</li>
-                  <li class="list-group-item">1000 coins / Rs. 300</li>
-                  <li class="list-group-item">2000 coins / Rs. 500</li>
-                  <li class="list-group-item">5000 coins / Rs. 1000</li>
-                  </ul>
-                  </h5>
+              </h3>
+              <h5>
+                  <select class=" form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select Recharge</option>
+                      <option value="100">200 coins / Rs.100</option>
+                      <option value="200">500 coins / Rs.200</option>
+                      <option value="300">1000 coins / Rs.300</option>
+                      <option value="500">2000 coins / Rs.500</option>
+                      <option value="1000">5000 coins / Rs.1000</option>
+                  </select>
+              </h5>
             </div>
           </div>
           <div class="col-sm-12 col-lg-6">
@@ -80,7 +81,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <button type="submit" class="btn btn-primary">Pay now</button>
               </form>
