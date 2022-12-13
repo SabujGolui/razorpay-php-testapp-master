@@ -80,7 +80,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-                  <textarea type="Number" class="form-control" id="phone"></textarea>
+                  <input type="Number" class="form-control" id="phone"><input/>
                 </div>
                 <button type="submit" class="btn btn-primary">Pay now</button>
               </form>
