@@ -56,14 +56,15 @@
                 <span class="text-white mb-2 "">Select Recharge</span>
               </h3>
               <h5>
-                  <select class=" form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                      <option selected>Select Recharge</option>
+                <div class="form-group">
+                  <select multiple class="form-control" name="amount" style="height: 150px;" id="amount" >
                       <option value="100">200 coins / Rs.100</option>
                       <option value="200">500 coins / Rs.200</option>
                       <option value="300">1000 coins / Rs.300</option>
                       <option value="500">2000 coins / Rs.500</option>
                       <option value="1000">5000 coins / Rs.1000</option>
                   </select>
+              </div>
               </h5>
             </div>
           </div>
