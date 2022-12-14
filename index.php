@@ -6,23 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Zone</title>
-  <link rel="stylesheet" href="/popup.css">
+  <link rel="stylesheet" href="./css/popup.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 </head>
 
-<body>
-
-
+<body id="body" style="overflow-x: hidden">
   <!-- ======================navbar================ -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
-        <img src="/images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
+        <img src="./images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
         Game Zone
       </a>
-      <form class="d-flex" role="search">
-        <button class="btn btn-outline-warning" type="submit">
+      <form class="d-flex" role="search" method="POST">
+        <button class="btn btn-outline-warning" name="data" onclick="return getData()" id="login">
           Login
         </button>
       </form>
@@ -34,7 +32,7 @@
   <!-- =========================================popup============================= -->
   <div class="container-popup">
     <div class="popup shadow">
-      <img class="img" src="/images/poup.jpg" alt="" />
+      <img class="img" src="./images/poup.jpg" alt="" />
       <div class="container d-flex justify-content-center">
         <button type="button" id="close" class="btn btn-warning mt-4">
           Close
@@ -42,10 +40,47 @@
       </div>
     </div>
   </div>
-  <script src="/popup.js"></script>
+
+  <!-- =========================================popup============================= -->
+  <div class="login-popup">
+    <div class="login shadow">
+      <div class="modal-content">
+        <center>
+           <p>Choose Log-in Method</p>
+        </center>
+        <hr>
+        <div class="row">
+           <div class="col-md-6 ">
+              <div class="fb-icon">
+                 <center>
+                    <img src="img/fbb.png" type="image/png" height="80px" alt="Facebook Login">
+                    <h4>Facebook</h4>
+                 </center>
+              </div>
+           </div>
+           <div class="col-md-6 ">
+              <a id="myBtn1" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginForm">
+                 <div class="game-icon">
+                    <center>
+                       <img src="img/icon.png" type="image/png" height="80px" alt="player id">
+                       <h4>Player ID</h4>
+                    </center>
+                 </div>
+              </a>
+           </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center">
+        <button type="button" id="closeL" class="btn btn-warning mt-4">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+  
   <!-- =====================================banner start ============================ -->
   <div class="col-lg-12 col-md-12 " style="margin-top: 20px;">
-    <img src="/images/banner.jpg" class="img-fluid d-block mx-auto" alt="">
+    <img src="./images/banner.jpg" class="img-fluid d-block mx-auto" alt="">
   </div>
   <!-- =====================================banner end ============================ -->
   
@@ -66,7 +101,7 @@
     <div class="container">
       <div class="card-group">
         <div class="card p-2">
-          <img class="card-img-top" src="/images/games.png" alt="Card image cap">
+          <img class="card-img-top" src="./images/games.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Free Fire Max</h5>
             <p class="card-text">Discount upto 50%</p>
@@ -74,7 +109,7 @@
           </div>
         </div>
         <div class="card p-2">
-          <img class="card-img-top" src="/images/games.png" alt="Card image cap">
+          <img class="card-img-top" src="./images/games.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Free Fire Max</h5>
             <p class="card-text">Discount upto 50%</p>
@@ -82,7 +117,7 @@
           </div>
         </div>
         <div class="card p-2">
-          <img class="card-img-top" src="/images/games.png" alt="Card image cap">
+          <img class="card-img-top" src="./images/games.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title text-primary">Free Fire Max</h5>
             <p class="card-text">Discount upto 50%</p>
@@ -252,6 +287,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+    <script src="./popups.js"></script>
 </body>
 
 </html>
