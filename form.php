@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -53,18 +53,38 @@
           <div class="col-sm-12 col-lg-6">
             <div class="left">
               <h3>
-                <span class="text-white mb-2 "">Select Recharge</span>
+                <span class="text-white mb-2 "">Please select your Recharge:</span>
               </h3>
               <h5>
                 <div class="form-group">
-                  <select multiple class="form-control" name="amount" style="height: 150px;" id="amount" >
-                      <option value="100">200 coins / Rs.100</option>
-                      <option value="200">500 coins / Rs.200</option>
-                      <option value="300">1000 coins / Rs.300</option>
-                      <option value="500">2000 coins / Rs.500</option>
-                      <option value="1000">5000 coins / Rs.1000</option>
-                  </select>
-              </div>
+                <!-- <select id="mySelect" onchange="myFunction()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select> -->
+                  <div>
+                    <input type="radio" id="200" name="recharge" value="200" onchange="myFunction(200)">
+                    <label for="200">200 coins / Rs.100</label><br>
+                  </div>
+                  <div>
+                    <input type="radio" id="500" name="recharge" value="500" onchange="myFunction(500)">
+                    <label for="500">500 coins / Rs.200</label><br>
+                  </div>
+                  <div>
+                    <input type="radio" id="1000" name="recharge" value="1000" onchange="myFunction(1000)">
+                    <label for="1000">1000 coins / Rs.300</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="2000" name="recharge" value="2000" onchange="myFunction(2000)">
+                    <label for="2000">2000 coins / Rs.500</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="5000" name="recharge" value="5000" onchange="myFunction(5000)">
+                    <label for="5000">5000 coins / Rs.1000</label>
+                  </div>
+                </form>
+                </div>
               </h5>
             </div>
           </div>
@@ -74,15 +94,19 @@
               <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">User ID</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" id="userid" >
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="email" >
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                  <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="number" class="form-control" id="number" >
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Recharge Amount</label>
+                  <input type="number" class="form-control" id="recharge"  disabled>
                 </div>
                 <button type="submit" class="btn btn-primary">Pay now</button>
               </form>
@@ -124,6 +148,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="./form.js" ></script>
 </body>
 
 </html>
