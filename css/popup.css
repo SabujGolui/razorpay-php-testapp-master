@@ -41,3 +41,7 @@ body {
     align-items: center;
     display: none;
 }
+
+#InputID{
+    width: 50% !important;
+}

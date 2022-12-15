@@ -43,31 +43,36 @@
 
   <!-- =========================================popup============================= -->
   <div class="login-popup">
-    <div class="login shadow">
+    <div class="login shadow p-3">
       <div class="modal-content">
         <center>
-           <p>Choose Log-in Method</p>
+          <p>Choose Log-in Method</p>
         </center>
         <hr>
         <div class="row">
-           <div class="col-md-6 ">
-              <div class="fb-icon">
-                 <center>
-                    <img src="img/fbb.png" type="image/png" height="80px" alt="Facebook Login">
-                    <h4>Facebook</h4>
-                 </center>
+          <div class="col-md-6 ">
+            <div class="fb-icon">
+              <center>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                  class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+                <h4>Facebook</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <a id="myBtn1" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginForm">
+              <div class="game-icon">
+                <center>
+                  <input type="Number" class="form-control" id="InputID" aria-describedby="emailHelp"
+                    placeholder="Enter Game ID">
+                  <h4>Player ID</h4>
+                </center>
               </div>
-           </div>
-           <div class="col-md-6 ">
-              <a id="myBtn1" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginForm">
-                 <div class="game-icon">
-                    <center>
-                       <img src="img/icon.png" type="image/png" height="80px" alt="player id">
-                       <h4>Player ID</h4>
-                    </center>
-                 </div>
-              </a>
-           </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="container d-flex justify-content-center">
@@ -77,13 +82,13 @@
       </div>
     </div>
   </div>
-  
+
   <!-- =====================================banner start ============================ -->
   <div class="col-lg-12 col-md-12 " style="margin-top: 20px;">
     <img src="./images/banner.jpg" class="img-fluid d-block mx-auto" alt="">
   </div>
   <!-- =====================================banner end ============================ -->
-  
+
   <section class="section">
     <div class="row justify-content-center " style="margin-top: 20px;">
       <div class="col-12 text-center">
@@ -287,7 +292,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-    <script src="./popups.js"></script>
+  <script src="./popups.js"></script>
 </body>
 
 </html>
