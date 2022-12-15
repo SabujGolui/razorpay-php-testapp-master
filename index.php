@@ -15,7 +15,7 @@
   <!-- ======================navbar================ -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
+      <a class="navbar-brand" href="/">
         <img src="./images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
         Game Zone
       </a>

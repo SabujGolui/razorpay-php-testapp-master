@@ -17,7 +17,7 @@
   <!-- =========================navbar================ -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
+      <a class="navbar-brand" href="/">
         <img src="/images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
         Game Zone
       </a>
@@ -57,12 +57,6 @@
               </h3>
               <h5>
                 <div class="form-group">
-                <!-- <select id="mySelect" onchange="myFunction()">
-  <option value="Audi">Audi</option>
-  <option value="BMW">BMW</option>
-  <option value="Mercedes">Mercedes</option>
-  <option value="Volvo">Volvo</option>
-</select> -->
                   <div>
                     <input type="radio" id="200" name="recharge" value="200" onchange="myFunction(200)">
                     <label for="200">200 coins / Rs.100</label><br>
@@ -83,7 +77,6 @@
                     <input type="radio" id="5000" name="recharge" value="5000" onchange="myFunction(5000)">
                     <label for="5000">5000 coins / Rs.1000</label>
                   </div>
-                </form>
                 </div>
               </h5>
             </div>
