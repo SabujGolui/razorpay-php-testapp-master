@@ -1,3 +1,9 @@
+window.addEventListener("load", function() {
+  var userid = document.getElementById("userid")
+  userid.value = localStorage.getItem("UserId")
+});
+
+
 function myFunction(amt) {
   
 //   console.log(document.getElementById("200"));
@@ -6,5 +12,7 @@ function myFunction(amt) {
 //     console.log(rate_value);
 //   }
   var ipRecharge = document.getElementById("recharge");
+  var userid = document.getElementById("userid")
   ipRecharge.value = amt;
+  userid.value = localStorage.getItem("UserId")
 }
