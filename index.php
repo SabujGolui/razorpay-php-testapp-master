@@ -42,7 +42,7 @@
   </div>
 
   <!-- =========================================popup============================= -->
-  <div class="login-popup">
+  <div class="login-popup" style="display: none;">
     <div class="login shadow p-3">
       <div class="modal-content">
         <center>
@@ -116,7 +116,7 @@
           <div class="card-body">
             <h5 class="card-title text-primary">Free Fire Max</h5>
             <p class="card-text">Discount upto 50%</p>
-            <a href="form.php" class="btn btn-warning shadow">Buy now</a>
+            <button class="btn btn-warning shadow buy" id="buy1">Buy now</button>
           </div>
         </div>
         <div class="card p-2">
@@ -124,7 +124,7 @@
           <div class="card-body">
             <h5 class="card-title text-primary">Free Fire Max</h5>
             <p class="card-text">Discount upto 50%</p>
-            <a href="form.php" class="btn btn-warning shadow">Buy now</a>
+            <button class="btn btn-warning shadow buy" id="buy2">Buy now</button>
           </div>
         </div>
         <div class="card p-2">
@@ -132,7 +132,7 @@
           <div class="card-body">
             <h5 class="card-title text-primary">Free Fire Max</h5>
             <p class="card-text">Discount upto 50%</p>
-            <a href="form.php" class="btn btn-warning shadow">Buy now</a>
+            <button class="btn btn-warning shadow buy" id="buy3">Buy now</button>
           </div>
         </div>
       </div>

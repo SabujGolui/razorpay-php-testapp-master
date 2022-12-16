@@ -18,11 +18,11 @@
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="/images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
+        <img src="./images/155.jpg" alt="Logo" width="30" class="d-inline-block align-text-top">
         Game Zone
       </a>
       <form class="d-flex" role="search">
-        <button class="btn btn-outline-warning" type="submit">
+        <button class="btn btn-outline-warning" type="submit" id="login">
           Login
         </button>
       </form>
@@ -56,7 +56,7 @@
                 <span class="text-white mb-2 "">Please select your Recharge:</span>
               </h3>
               <h5>
-                <div class="form-group">
+                <div class=" form-group">
                   <div>
                     <input type="radio" id="200" name="recharge" value="200" onchange="myFunction(200)">
                     <label for="200">200 coins / Rs.100</label><br>
@@ -77,37 +77,37 @@
                     <input type="radio" id="5000" name="recharge" value="5000" onchange="myFunction(5000)">
                     <label for="5000">5000 coins / Rs.1000</label>
                   </div>
-                </div>
-              </h5>
             </div>
+            </h5>
           </div>
-          <div class="col-sm-12 col-lg-6">
-            <div class="right">
-              <i class="fa fa-caret-left"></i>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">User ID</label>
-                  <input type="text" class="form-control" id="userid" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                  <input type="number" class="form-control" id="number" >
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Recharge Amount</label>
-                  <input type="number" class="form-control" id="recharge"  disabled>
-                </div>
-                <button type="submit" class="btn btn-primary">Pay now</button>
-              </form>
-            </div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <div class="right">
+            <i class="fa fa-caret-left"></i>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">User ID</label>
+                <input type="text" class="form-control" id="userid">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="number">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Recharge Amount</label>
+                <input type="number" class="form-control" id="recharge" disabled>
+              </div>
+              <button type="submit" class="btn btn-primary">Pay now</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <section class="mt-5">
@@ -141,7 +141,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="./form.js" ></script>
+  <script src="./form.js"></script>
+  <script src="./popup.js"></script>
 </body>
 
 </html>
