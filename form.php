@@ -87,19 +87,19 @@
             <form method="POST" action="upi.php">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">User ID</label>
-                <input type="text" class="form-control" id="userid">
+                <input type="text" class="form-control" id="userid" name="name">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" name="email">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="number">
+                <input type="number" class="form-control" id="number" name="number">
               </div>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Recharge Amount</label>
-                <input type="number" class="form-control" id="recharge" disabled>
+                <input type="number" class="form-control" id="recharge" disabled name="amount">
               </div>
               <button type="submit" class="btn btn-primary" id="pay">Pay now</button>
             </form>

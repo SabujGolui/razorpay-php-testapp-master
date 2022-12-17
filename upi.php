@@ -1,17 +1,19 @@
 <?php
+     $name = $_POST["name"];
+     $email = $_POST["email"];
+     $number = $_POST["number"];
+     $amount = $_POST["amount"];
+     $cid = $milliseconds = floor(microtime(true) * 1000);
 	 $key = "deddb76d-f484-4696-914f-aac6255febd5";    // you can get your key from https://merchant.upigateway.com/user/api_credentials
 	 $content = json_encode(array(
 	 	"key"=> $key,
-	 	"client_txn_id"=> "123456789", // order id or your own transaction id
-	 	"amount"=> "100", 
-	 	"p_info"=> "Product Name",
-	 	"customer_name"=> "Jon Doe", // customer name
-	 	"customer_email"=> "jondoe@gmail.com", // customer email
-	 	"customer_mobile"=> "9876543210", // customer mobile number
-	 	"redirect_url"=> "http://google.com", // redirect url after payment, with ?client_txn_id=&txn_id=
-	 	"udf1"=> "user defined field 1", // udf1, udf2 and udf3 are used to save other order related data, like customer id etc.
-	 	"udf2"=> "user defined field 2",
-	 	"udf3"=> "user defined field 3",
+	 	"client_txn_id"=> $cid, // order id or your own transaction id
+	 	"amount"=> $amount, 
+	 	"p_info"=> "Free Fire",
+	 	"customer_name"=> $name, // customer name
+	 	"customer_email"=> $email, // customer email
+	 	"customer_mobile"=>$number, // customer mobile number
+	 	"redirect_url"=> "https://gamecoins.in", // redirect url after payment, with ?client_txn_id=&txn_id=
 	 ));
 	 $url = "https://merchant.upigateway.com/api/create_order";
 	 $curl = curl_init($url);
