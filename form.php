@@ -84,7 +84,7 @@
         <div class="col-sm-12 col-lg-6">
           <div class="right">
             <i class="fa fa-caret-left"></i>
-            <form>
+            <form method="POST" action="upi.php">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">User ID</label>
                 <input type="text" class="form-control" id="userid">
@@ -101,7 +101,7 @@
                 <label for="exampleInputEmail1" class="form-label">Recharge Amount</label>
                 <input type="number" class="form-control" id="recharge" disabled>
               </div>
-              <button type="submit" class="btn btn-primary">Pay now</button>
+              <button type="submit" class="btn btn-primary" id="pay">Pay now</button>
             </form>
           </div>
         </div>
