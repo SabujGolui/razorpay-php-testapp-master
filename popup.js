@@ -1,6 +1,6 @@
 // Timeout Popup
 window.addEventListener("load", function() {
-  var userid = document.getElementById("userid")
+  var userid = localStorage.getItem("UserId")
   if (userid) {
     document.getElementById("login").innerHTML = "Log Out"
   }
